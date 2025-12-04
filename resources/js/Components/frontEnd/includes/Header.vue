@@ -78,7 +78,7 @@
 
                             <ul class="dropdown-menu" aria-labelledby="dropdown03">
                                 <li>
-                                    <router-link class="dropdown-item" to="/doctors">Doctors List</router-link>
+                                    <router-link class="dropdown-item" to="/doctor-list">Doctors List</router-link>
                                 </li>
                                 <li>
                                     <router-link class="dropdown-item" to="/appointment">Appointment</router-link>

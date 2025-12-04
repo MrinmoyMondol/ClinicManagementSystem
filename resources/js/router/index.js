@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../Components/frontEnd/pages/Home.vue'
 import About from '../Components/frontEnd/pages/About.vue'
 import Doctor from '../Components/frontEnd/pages/doctor/DoctorList.vue'
+import Services from '../Components/frontEnd/pages/Services.vue'
 import DoctorProfile from '../Components/frontEnd/pages/doctor/DoctorProfile.vue'
 import Appointment from '../Components/frontEnd/pages/Appointment.vue'
 import Blog from '../Components/frontEnd/pages/blog/Blog.vue'
@@ -13,6 +14,7 @@ const routes = [
     { path: '/', component: Home },
 
     { path: '/about', component: About },
+    { path: '/services', component: Services },
 
     { path: '/doctor-list', component: Doctor },
     { path: '/doctor-profile', component: DoctorProfile },
