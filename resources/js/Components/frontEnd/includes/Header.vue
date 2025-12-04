@@ -20,54 +20,85 @@
                 </div>
             </div>
         </div>
+
+
         <nav class="navbar navbar-expand-lg navigation" id="navbar">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="" class="img-fluid">
-                </a>
 
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Brand -->
+                <router-link class="navbar-brand" to="/">
+                    <img src="/frontEnd/images/logo.png" alt="Logo" class="img-fluid" />
+                </router-link>
+
+                <!-- Toggle button -->
+                <button
+                    class="navbar-toggler collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarmain"
+                    aria-controls="navbarmain"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
                     <span class="icofont-navigation-menu"></span>
                 </button>
 
+                <!-- Menu -->
                 <div class="collapse navbar-collapse" id="navbarmain">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Department <i class="icofont-thin-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                                <li><a class="dropdown-item" href="department.html">Departments</a></li>
-                                <li><a class="dropdown-item" href="department-single.html">Department Single</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="/" exact>Home</router-link>
                         </li>
 
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="/about">About</router-link>
+                        </li>
+
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="/services">Services</router-link>
+                        </li>
+
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="/department">Department</router-link>
+                        </li>
+
+                        <!-- Doctors Dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctors <i class="icofont-thin-down"></i></a>
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="dropdown03"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                Doctors <i class="icofont-thin-down"></i>
+                            </a>
+
                             <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                                <li><a class="dropdown-item" href="doctor.html">Doctors</a></li>
-                                <li><a class="dropdown-item" href="doctor-single.html">Doctor Single</a></li>
-                                <li><a class="dropdown-item" href="appoinment.html">Appoinment</a></li>
+                                <li>
+                                    <router-link class="dropdown-item" to="/doctors">Doctors List</router-link>
+                                </li>
+                                <li>
+                                    <router-link class="dropdown-item" to="/appointment">Appointment</router-link>
+                                </li>
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="blog-sidebar.html" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog <i class="icofont-thin-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown05">
-                                <li><a class="dropdown-item" href="blog-sidebar.html">Blog with Sidebar</a></li>
-
-                                <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="/blog">Blog</router-link>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="/contact">Contact</router-link>
+                        </li>
+
                     </ul>
                 </div>
             </div>
         </nav>
+
     </header>
 
 </template>
